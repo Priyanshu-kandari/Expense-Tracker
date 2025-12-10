@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Expense Tracker</h1>
+        <div id="balance-Container">
+            <h2>Your Balance</h2>
+            <h1 id="Balance">$0.00</h1>
+            <div id="summary">
+                <div id="income">
+                    <p>Income</p>
+                    <h3 id="Income-amount">$0.00</h3>
+                </div>
+                <div id="expenses">
+                    <p>Expenses</p>
+                    <h3 id="expense-amount">$0.00</h3>
+                </div>
+            </div>
+        </div>
+        <div id="main-content">
+            <div id="transaction-container">
+                <h2>Transactions</h2>
+                <ul id="transactions-list">
+                    <!-- insert here -->
+                     
+                </ul>
+            </div>
+            <div id="form-container">
+                <h2>Add Transaction</h2>
+                <form id="Transaction-form">
+                    <div class="form-group">
+                        <label for="Description">Description</label>
+                        <input type="text" id="Description" placeholder="Enter Description">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Amount">Amount</label>
+                        <input type="text" id="Amount" placeholder="Enter Amount">
+                        <small>Use negative (-) for expenses</small>
+                    </div>
+
+                    <button type="submit">Add Transaction</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="credit"><a href="https://www.instagram.com/preyanshuuu">Developed by Priyanshu kandari</a></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
